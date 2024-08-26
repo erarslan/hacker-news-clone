@@ -45,7 +45,7 @@ header .flex a {
   padding-bottom: 0.5em;
 }
 
-a:hover {
+a:not(.header-link):hover {
   text-decoration: underline;
 }
 
