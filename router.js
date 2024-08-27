@@ -1,5 +1,6 @@
 import Stories from "./pages/stories.js";
 import item from "./pages/item.js";
+import Favorites from "./pages/favorites.js";
 
 const router = new Navigo(null, true, "#");
 
@@ -28,7 +29,7 @@ export default class RouterHandler {
       },
       {
         path: "/favorites",
-        page: Stories,
+        page: Favorites,
       },
       {
         path: "/item",
