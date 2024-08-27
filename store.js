@@ -31,3 +31,7 @@ function favoritesReducer(state = initialState, action) {
       return state;
   }
 }
+
+const store = createStore(favoritesReducer);
+
+export default store;
