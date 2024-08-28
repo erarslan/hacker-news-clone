@@ -5,9 +5,9 @@ export default function Story(story) {
       <span class="gray">${story.index ? story.index + "." : ""}</span>
       <span class="upvote">▲</span>
       <a href="${story.url}" target="_blank">${story.title}</a>
-      <a href="https://${story.domain}" target="_blank" class="story-domain">(${
-    story.domain
-  })</a>
+      <a href="https://${story.domain}" target="_blank" class="story-domain">${
+    story.domain ? "(" + story.domain + ")" : ""
+  }</a>
     </div>
     <div>
       <div class="gray">
