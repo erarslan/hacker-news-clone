@@ -10,7 +10,7 @@ function createStore(reducer) {
 }
 
 const initialState = {
-  favorites: [],
+  favorites: JSON.parse(localStorage.getItem("favs")) || [],
 };
 
 function favoritesReducer(state = initialState, action) {

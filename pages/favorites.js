@@ -5,6 +5,7 @@ import Story from "../components/Story.js";
 
 export default function Favorites() {
   const { favorites } = store.getState();
+  localStorage.setItem("favs", JSON.stringify(favorites));
   const hasFavorites = favorites.length > 0;
   view.innerHTML = `
   <div>
