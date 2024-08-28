@@ -11,9 +11,10 @@ export default function Favorites() {
   ${
     hasFavorites
       ? favorites
-          .map((favorite) =>
+          .map((favorite, i) =>
             Story({
               ...favorite,
+              index: i + 1,
               isFavorite: checkFavorite(favorites, favorite),
             })
           )
